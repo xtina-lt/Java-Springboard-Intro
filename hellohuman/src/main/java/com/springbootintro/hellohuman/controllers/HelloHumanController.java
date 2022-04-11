@@ -1,5 +1,6 @@
 package com.springbootintro.hellohuman.controllers;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -38,7 +39,11 @@ public class HelloHumanController {
         } else {
             return String.format("<p><a href='/'>Go Back</a> <h1>Hello %s!</h1></p>", full);
         }
-		
+    }
+
+    @RequestMapping("/p/{x}/{y}")
+    public String showLesson(@PathVariable("x") String x, @PathVariable("y") String y){
+        return x + " " + y; 
     }
 }
 
