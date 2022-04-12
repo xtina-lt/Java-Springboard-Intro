@@ -1,4 +1,4 @@
-package com.springintro.seer;
+package com.xtinacodes.seer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
