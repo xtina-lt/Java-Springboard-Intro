@@ -5,13 +5,57 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>XTINA.CODES</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script type="text/javascript" src="/js/script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1> Name: <c:out value="${name}"/></h1>
-<h2>Item: <c:out value="${itemName}"/></h2>
-<h2>Price: <c:out value="${price}"/></h2>
-<h2>Description: <c:out value="${description}"/></h2>
-<h2>Vendor: <c:out value="${vendor}"/></h2>
+<header>
+	Grace
+</header>
+<main>
+<div>
+<table>
+	<tr>
+		<th colspan="2">
+			Name: <c:out value="${name}"/>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Item
+		</td>
+		<td>
+			<c:out value="${itemName}"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Price:
+		</td>
+		<td>
+			<c:out value="${price}"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Description:
+		</td>
+		<td>
+			<c:out value="${description}"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Vendor:
+		</td>
+		<td>
+			<c:out value="${vendor}"/>
+		</td>
+	</tr>
+</table>
+</div>
+</main>
 </body>
 </html>

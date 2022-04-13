@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class Hoppers {
-	@RequestMapping("/test")
+	@RequestMapping("/")
 	public String index(Model m) {
 		m.addAttribute("name", "Grace Hopper");
 		m.addAttribute("itemName", "Copper Wire");
