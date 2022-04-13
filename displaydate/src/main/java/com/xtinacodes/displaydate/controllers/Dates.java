@@ -1,8 +1,6 @@
 package com.xtinacodes.displaydate.controllers;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,24 +18,26 @@ public class Dates {
 	@RequestMapping("/today")
 	public String today(Model m) {
 		String d = "";
-		LocalDate date = LocalDate.now();
-		d += date.format(DateTimeFormatter.ofPattern("EEEE,")) + " the ";
-		d += date.format(DateTimeFormatter.ofPattern("d")) + " of ";
-		d += date.format(DateTimeFormatter.ofPattern("MMMM, yyyy."));
+		Date date = new Date();
+		d += new SimpleDateFormat("EEEE,").format(date) + " the ";
+		d += new SimpleDateFormat("d").format(date) + " of ";
+		d += new SimpleDateFormat("MMMM, yyyy.").format(date);
 		
 
 		m.addAttribute("k", "The date to conquer life: ");
 		m.addAttribute("v", d);
+		
 		return "index.jsp";
 
 	}
 	
 	@RequestMapping("/time")
 	public String time(Model m) {
-		LocalDateTime t = LocalDateTime.now();
+		Date date = new Date();
 		
 		m.addAttribute("k", "The current time to be alive is: ");
-		m.addAttribute("v", t.format(DateTimeFormatter.ofPattern("HH:mm:ss.")));
+		m.addAttribute("v", new SimpleDateFormat("HH:mm:ss.").format(date));
+		
 		return "index.jsp";
 	}
 }

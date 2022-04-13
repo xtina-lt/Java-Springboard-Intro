@@ -14,6 +14,11 @@
 	<header>
 		Play Date
 	</header>
+	<nav>
+		<a href="/">Home</a>
+		<a href="/today">Today</a>
+		<a href="/time">Time</a>
+	</nav>
 	
 	<main>
 		<div class="large">

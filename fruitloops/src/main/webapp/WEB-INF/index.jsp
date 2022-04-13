@@ -18,6 +18,10 @@
 	    FRUIT LOOPS
 	</header>
 	
+	<nav>
+	<a href="/xtina.codes" target=#>xtina.codes</a>
+	</nav>
+	
 	<main>
 		<div>
 			<table>
