@@ -114,6 +114,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 3vh;
 }
 
+.larger{
+	font-size: 10vh;
+	font-weight: bolder;
+}
+
 .emoji{
     font-size: 20vh;
 }
